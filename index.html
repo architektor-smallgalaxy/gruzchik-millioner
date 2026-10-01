@@ -1,0 +1,293 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Грузчик-миллионер — бережные переезды и такелаж в Москве</title>
+<meta name="description" content="Переезды, такелаж, перевозка антиквариата, картин и пианино в Москве. Фиксированная цена, договор, рейтинг 4,9 на Профи.ру — 300+ отзывов.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Prata&family=Manrope:wght@400;500;700&display=swap" rel="stylesheet">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%23111'/%3E%3Ccircle cx='12' cy='16' r='6' fill='none' stroke='%23c9a45c' stroke-width='2.5'/%3E%3Cpath d='M18 16h10M24 16v4M27 16v3' stroke='%23c9a45c' stroke-width='2.5'/%3E%3C/svg%3E">
+<style>
+:root{--bg:#0f0e0c;--bg2:#17150f;--card:#1c1a15;--line:#2e2a22;--tx:#efe9dd;--mut:#a69e8e;--gold:#c9a45c;--gold2:#e2c487;
+--f1:'Prata',Georgia,serif;--f2:'Manrope',system-ui,sans-serif;--w:1180px}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{background:var(--bg);color:var(--tx);font:400 17px/1.6 var(--f2);-webkit-font-smoothing:antialiased}
+img{max-width:100%;display:block}
+a{color:inherit;text-decoration:none}
+.wrap{max-width:var(--w);margin:0 auto;padding:0 24px}
+h1,h2,h3{font-family:var(--f1);font-weight:400;line-height:1.15;letter-spacing:-.01em}
+h2{font-size:clamp(30px,4vw,48px);margin-bottom:18px}
+.eyebrow{font-size:13px;letter-spacing:.18em;text-transform:uppercase;color:var(--gold);margin-bottom:14px;display:block}
+.lead{color:var(--mut);max-width:620px;font-size:18px}
+section{padding:110px 0}
+.btn{display:inline-flex;align-items:center;gap:10px;padding:16px 28px;border-radius:999px;font-weight:700;font-size:16px;transition:.2s;border:1px solid var(--gold);cursor:pointer;font-family:var(--f2)}
+.btn-gold{background:var(--gold);color:#15120c}.btn-gold:hover{background:var(--gold2)}
+.btn-line{color:var(--tx);border-color:var(--line)}.btn-line:hover{border-color:var(--gold);color:var(--gold2)}
+/* header */
+header{position:fixed;inset:0 0 auto;z-index:20;background:rgba(15,14,12,.82);backdrop-filter:blur(12px);border-bottom:1px solid var(--line)}
+.nav{display:flex;align-items:center;justify-content:space-between;height:70px}
+.logo{display:flex;align-items:center;gap:12px;font-family:var(--f1);font-size:20px}
+.logo svg{width:34px;height:34px;color:var(--gold)}
+.menu{display:flex;gap:30px;font-size:15px;color:var(--mut)}.menu a:hover{color:var(--tx)}
+.nav .btn{padding:10px 20px;font-size:14px}
+/* hero */
+.hero{padding:150px 0 90px;position:relative;overflow:hidden}
+.hero-grid{display:grid;grid-template-columns:1.1fr .9fr;gap:60px;align-items:center}
+.hero h1{font-size:clamp(42px,6vw,78px);margin-bottom:24px}
+.hero h1 em{font-style:normal;color:var(--gold)}
+.hero .lead{margin-bottom:36px}
+.ctas{display:flex;gap:14px;flex-wrap:wrap}
+.hero-img{position:relative;border-radius:22px;overflow:hidden;aspect-ratio:4/5;border:1px solid var(--line)}
+.hero-img img{width:100%;height:100%;object-fit:cover}
+.badge{position:absolute;left:20px;bottom:20px;background:rgba(15,14,12,.88);border:1px solid var(--line);border-radius:16px;padding:14px 18px;display:flex;gap:14px;align-items:center}
+.badge b{font-family:var(--f1);font-size:34px;color:var(--gold);font-weight:400}
+.badge span{font-size:13px;color:var(--mut);line-height:1.35}
+.stats{display:grid;grid-template-columns:repeat(4,1fr);border-top:1px solid var(--line);border-bottom:1px solid var(--line);margin-top:80px}
+.stats div{padding:28px 20px;border-right:1px solid var(--line)}.stats div:last-child{border:0}
+.stats b{display:block;font-family:var(--f1);font-size:38px;font-weight:400;color:var(--gold2)}
+.stats span{color:var(--mut);font-size:14px}
+/* services */
+.svc{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:var(--line);border:1px solid var(--line);border-radius:20px;overflow:hidden;margin-top:50px}
+.svc article{background:var(--bg);padding:34px 30px;transition:.25s}
+.svc article:hover{background:var(--card)}
+.svc .n{font-size:13px;color:var(--gold);letter-spacing:.1em}
+.svc h3{font-size:24px;margin:14px 0 10px}
+.svc p{color:var(--mut);font-size:15px}
+.svc .price{margin-top:18px;font-weight:700;color:var(--tx)}
+/* why */
+.why{background:var(--bg2)}
+.why-grid{display:grid;grid-template-columns:.9fr 1.1fr;gap:70px;align-items:center}
+.why-img{border-radius:22px;overflow:hidden;border:1px solid var(--line)}
+.list{margin-top:30px;display:grid;gap:22px}
+.list div{display:grid;grid-template-columns:44px 1fr;gap:16px}
+.list i{width:44px;height:44px;border-radius:50%;border:1px solid var(--gold);display:grid;place-items:center;color:var(--gold);font-style:normal;font-family:var(--f1)}
+.list h4{font-size:18px;margin-bottom:4px}.list p{color:var(--mut);font-size:15px}
+/* gallery */
+.gal{display:grid;grid-template-columns:2fr 1fr 1fr;grid-template-rows:280px 280px;gap:14px;margin-top:50px}
+.gal figure{border-radius:18px;overflow:hidden;position:relative;border:1px solid var(--line)}
+.gal img{width:100%;height:100%;object-fit:cover;transition:.6s}.gal figure:hover img{transform:scale(1.04)}
+.gal figcaption{position:absolute;left:16px;bottom:14px;font-size:14px;background:rgba(15,14,12,.8);padding:6px 12px;border-radius:999px}
+.gal .big{grid-row:span 2}
+.gal2{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin-top:14px}.gal2 figure{border-radius:18px;overflow:hidden;position:relative;border:1px solid var(--line);aspect-ratio:16/10}.gal2 img{width:100%;height:100%;object-fit:cover;transition:.6s}.gal2 figure:hover img{transform:scale(1.04)}.gal2 figcaption{position:absolute;left:12px;bottom:10px;font-size:13px;background:rgba(15,14,12,.8);padding:5px 10px;border-radius:999px}
+@media(max-width:900px){.gal2{grid-template-columns:1fr 1fr}}
+/* video */
+.vids{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;margin-top:50px}
+.vid{cursor:pointer}
+.vid .th{position:relative;aspect-ratio:16/9;border-radius:16px;overflow:hidden;border:1px solid var(--line)}
+.vid .th img{width:100%;height:100%;object-fit:cover}
+.vid .th:after{content:"";position:absolute;inset:0;background:linear-gradient(transparent 50%,rgba(0,0,0,.6))}
+.play{position:absolute;z-index:2;left:50%;top:50%;translate:-50% -50%;width:60px;height:60px;border-radius:50%;background:var(--gold);display:grid;place-items:center;transition:.2s}
+.vid:hover .play{scale:1.1}
+.vid h3{font-family:var(--f2);font-weight:500;font-size:16px;margin-top:12px}
+.vid iframe{width:100%;height:100%;border:0}
+/* reviews */
+.rev-top{display:flex;justify-content:space-between;align-items:end;gap:30px;flex-wrap:wrap}
+.score{display:flex;align-items:center;gap:20px}
+.score b{font-family:var(--f1);font-size:84px;font-weight:400;color:var(--gold);line-height:1}
+.score span{color:var(--mut);font-size:15px}
+.revs{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;margin-top:50px}
+.rev{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:28px}
+.stars{color:var(--gold);letter-spacing:3px;margin-bottom:12px}
+.rev p{font-size:15px;color:#d8d1c3}.rev small{display:block;margin-top:16px;color:var(--mut)}
+/* steps */
+.steps{display:grid;grid-template-columns:repeat(4,1fr);gap:22px;margin-top:50px;counter-reset:s}
+.steps div{border-top:1px solid var(--gold);padding-top:22px}
+.steps div:before{counter-increment:s;content:"0" counter(s);font-family:var(--f1);color:var(--gold);font-size:28px;display:block;margin-bottom:10px}
+.steps h4{font-size:18px;margin-bottom:6px}.steps p{color:var(--mut);font-size:15px}
+/* about */
+.about{background:var(--bg2)}
+.about-grid{display:grid;grid-template-columns:1fr 1fr;gap:70px;align-items:center}
+.about blockquote{font-family:var(--f1);font-size:clamp(24px,3vw,34px);line-height:1.3;margin:20px 0 24px}
+.about blockquote em{font-style:normal;color:var(--gold)}
+.socials{display:flex;gap:12px;flex-wrap:wrap;margin-top:30px}
+/* form */
+.order{display:grid;grid-template-columns:1fr 1fr;gap:60px;align-items:start}
+form{background:var(--card);border:1px solid var(--line);border-radius:22px;padding:36px;display:grid;gap:16px}
+label{font-size:14px;color:var(--mut);display:grid;gap:6px}
+input,textarea,select{background:var(--bg);border:1px solid var(--line);border-radius:12px;padding:14px 16px;color:var(--tx);font:inherit;font-size:16px}
+input:focus,textarea:focus,select:focus{outline:none;border-color:var(--gold)}
+textarea{min-height:110px;resize:vertical}
+.row{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+.ok{display:none;color:var(--gold2);font-size:15px}
+.guar{display:grid;gap:14px;margin-top:30px}
+.guar div{display:flex;gap:12px;align-items:center;color:var(--mut)}
+.guar div:before{content:"";width:8px;height:8px;border-radius:50%;background:var(--gold);flex:none}
+footer{border-top:1px solid var(--line);padding:40px 0;color:var(--mut);font-size:14px}
+footer .wrap{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}
+.reveal{opacity:0;transform:translateY(24px);transition:opacity .8s,transform .8s}.reveal.on{opacity:1;transform:none}
+@media (max-width:900px){
+ section{padding:80px 0}.menu{display:none}
+ .hero-grid,.why-grid,.about-grid,.order{grid-template-columns:1fr;gap:40px}
+ .stats{grid-template-columns:repeat(2,1fr)}.stats div:nth-child(2){border-right:0}.stats div:nth-child(-n+2){border-bottom:1px solid var(--line)}
+ .svc,.vids,.revs{grid-template-columns:1fr}.steps{grid-template-columns:1fr 1fr}
+ .gal{grid-template-columns:1fr 1fr;grid-template-rows:220px 220px 220px}.gal .big{grid-column:span 2;grid-row:auto}
+ .row{grid-template-columns:1fr}
+}
+@media (max-width:520px){.nav .btn{display:none}.steps{grid-template-columns:1fr}form{padding:24px}}
+</style>
+</head>
+<body>
+<header><div class="wrap nav">
+ <a href="#" class="logo" aria-label="Грузчик-миллионер">
+  <svg viewBox="0 0 40 40" fill="none" aria-hidden="true"><circle cx="14" cy="20" r="8" stroke="currentColor" stroke-width="2.4"/><circle cx="14" cy="20" r="2.5" fill="currentColor"/><path d="M22 20h14M31 20v6M35 20v4" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"/></svg>
+  Грузчик-миллионер</a>
+ <nav class="menu"><a href="#services">Услуги</a><a href="#works">Работы</a><a href="#reviews">Отзывы</a><a href="#about">О нас</a></nav>
+ <a href="#order" class="btn btn-gold">Рассчитать</a>
+</div></header>
+
+<section class="hero"><div class="wrap">
+ <div class="hero-grid">
+  <div class="reveal">
+   <span class="eyebrow">Москва · переезды · такелаж</span>
+   <h1>Быстро, качественно, <em>дорого.</em></h1>
+   <p class="lead">Перевозим то, что жалко разбить: антиквариат, картины, пианино, дизайнерскую мебель и технику. Фиксированная цена, договор и спокойствие с первой минуты.</p>
+   <div class="ctas"><a href="#order" class="btn btn-gold">Рассчитать стоимость →</a><a href="https://t.me/Enikonoff" target="_blank" rel="noopener" class="btn btn-line">Написать в Telegram</a></div>
+  </div>
+  <div class="hero-img reveal"><img src="img/evgeny.jpg" alt="Евгений Никонов, руководитель команды" style="object-position:30% center">
+   <div class="badge"><b>4,9</b><span>рейтинг на Профи.ру<br>302 отзыва</span></div></div>
+ </div>
+ <div class="stats reveal">
+  <div><b>7 лет</b><span>в грузоперевозках</span></div>
+  <div><b>300+</b><span>отзывов клиентов</span></div>
+  <div><b>98%</b><span>оценок «отлично»</span></div>
+  <div><b>0 ₽</b><span>сюрпризов в смете</span></div>
+ </div>
+</div></section>
+
+<section id="services"><div class="wrap">
+ <span class="eyebrow">Услуги</span>
+ <h2>Всё, что нужно сдвинуть с места</h2>
+ <p class="lead">От квартиры до рояля на крыше. Работаем со своей упаковкой, инструментом и такелажным оборудованием.</p>
+ <div class="svc">
+  <article class="reveal"><span class="n">01</span><h3>Квартирные и офисные переезды</h3><p>Упаковка, разборка, перевозка и сборка на новом месте. Вы приезжаете, а всё уже стоит.</p><div class="price">от 2 000 ₽</div></article>
+  <article class="reveal"><span class="n">02</span><h3>Такелажные работы</h3><p>Сейфы, станки, кондиционеры и тяжёлое оборудование. Подъём на этаж и на кровлю.</p><div class="price">по расчёту</div></article>
+  <article class="reveal"><span class="n">03</span><h3>Антиквариат и картины</h3><p>Музейная упаковка, отдельная погрузка, бережная перевозка ценных и хрупких вещей.</p><div class="price">по расчёту</div></article>
+  <article class="reveal"><span class="n">04</span><h3>Пианино и рояли</h3><p>Перевозка, подъём и спуск по лестницам. Если инструмент отслужил, вывезем на утилизацию.</p><div class="price">утилизация 5 000 ₽</div></article>
+  <article class="reveal"><span class="n">05</span><h3>Сборка мебели</h3><p>Разборка и сборка любой сложности, включая офисную и дизайнерскую мебель.</p><div class="price">по договорённости</div></article>
+  <article class="reveal"><span class="n">06</span><h3>Грузчики и вынос мусора</h3><p>Погрузка, разгрузка, подъём на этаж, спуск строительного мусора.</p><div class="price">от 2 000 ₽</div></article>
+ </div>
+</div></section>
+
+<section class="why"><div class="wrap why-grid">
+ <div class="why-img reveal"><img src="img/roof.jpg" alt="Такелаж кондиционера на крыше"></div>
+ <div class="reveal">
+  <span class="eyebrow">Почему мы</span>
+  <h2>Мы не просто носим. Мы отвечаем.</h2>
+  <div class="list">
+   <div><i>1</i><div><h4>Фиксированная цена и договор</h4><p>Стоимость называем заранее и не меняем её на месте.</p></div></div>
+   <div><i>2</i><div><h4>Персональный менеджер</h4><p>Евгений лично ведёт заказ от первого звонка до последней коробки.</p></div></div>
+   <div><i>3</i><div><h4>Своя команда</h4><p>Только проверенные люди из нашего клуба «Раз, два, взяли». Случайных грузчиков нет.</p></div></div>
+   <div><i>4</i><div><h4>Гарантия сохранности</h4><p>Упаковка, защита проёмов и полов. Если что-то случилось, отвечаем.</p></div></div>
+  </div>
+ </div>
+</div></section>
+
+<section id="works"><div class="wrap">
+ <span class="eyebrow">Работы</span>
+ <h2>Как это выглядит на объекте</h2>
+ <div class="gal">
+  <figure class="big reveal"><img src="img/paintings.jpg" alt="Перевозка картин"><figcaption>Перевозка картин</figcaption></figure>
+  <figure class="reveal"><img src="img/roof.jpg" alt="Такелаж на кровле" style="object-position:40% center"><figcaption>Такелаж на кровле</figcaption></figure>
+  <figure class="reveal"><img src="img/carry.jpg" alt="Перенос груза"><figcaption>Плитка и стройматериалы</figcaption></figure>
+  <figure class="reveal"><img src="img/evgeny2.jpg" alt="Офисный переезд" style="object-position:30% center"><figcaption>Офисный переезд</figcaption></figure>
+  <figure class="reveal"><img src="img/yt-INdgPtNHpv4.jpg" alt="Дом Станиславского"><figcaption>Дом Станиславского</figcaption></figure>
+ </div>
+ <div class="gal2">
+  <figure class="reveal"><img src="img/yt-N2iBVpI1pQA.jpg" alt="" loading="lazy"><figcaption>Сборка мебели</figcaption></figure>
+  <figure class="reveal"><img src="img/yt-AJHmMYnmo9c.jpg" alt="" loading="lazy"><figcaption>Разбор выставки</figcaption></figure>
+  <figure class="reveal"><img src="img/yt-UucI0WYpWgU.jpg" alt="" loading="lazy"><figcaption>Такелаж с препятствиями</figcaption></figure>
+  <figure class="reveal"><img src="img/yt-2WCOt68XDeo.jpg" alt="" loading="lazy"><figcaption>Один день бригады</figcaption></figure>
+ </div>
+</div></section>
+
+<section style="padding-top:0"><div class="wrap">
+ <span class="eyebrow">YouTube</span>
+ <h2>Смотрите, как мы работаем</h2>
+ <p class="lead">Снимаем реальные заказы без постановки: сложные проёмы, ценные вещи и немного закулисья.</p>
+ <div class="vids">
+  <div class="vid reveal" data-id="INdgPtNHpv4"><div class="th"><img src="img/yt-INdgPtNHpv4.jpg" alt=""><span class="play">▶</span></div><h3>Грузчик-миллионер в доме Станиславского</h3></div>
+  <div class="vid reveal" data-id="UucI0WYpWgU"><div class="th"><img src="img/yt-UucI0WYpWgU.jpg" alt=""><span class="play">▶</span></div><h3>Пароль ПЕРЕЕЗД и такелаж с препятствиями</h3></div>
+  <div class="vid reveal" data-id="EP2DRL4EWYM"><div class="th"><img src="img/yt-EP2DRL4EWYM.jpg" alt=""><span class="play">▶</span></div><h3>И снова картины…</h3></div>
+   <div class="vid reveal" data-id="4_OB1ovjCr0"><div class="th"><img src="img/yt-4_OB1ovjCr0.jpg" alt="" loading="lazy"><span class="play">▶</span></div><h3>Краш-тест старой мебели</h3></div>
+  <div class="vid reveal" data-id="UqjdeBxrnNw"><div class="th"><img src="img/yt-UqjdeBxrnNw.jpg" alt="" loading="lazy"><span class="play">▶</span></div><h3>Офисы, снова картины и баскетбольная команда</h3></div>
+  <div class="vid reveal" data-id="DoGFv9NGEjE"><div class="th"><img src="img/yt-DoGFv9NGEjE.jpg" alt="" loading="lazy"><span class="play">▶</span></div><h3>Весенний рабочий процесс</h3></div>
+ </div>
+ <div style="margin-top:34px"><a href="https://youtube.com/@lifebeingnow" target="_blank" rel="noopener" class="btn btn-line">Все видео на YouTube →</a></div>
+</div></section>
+
+<section id="reviews" class="why"><div class="wrap">
+ <div class="rev-top">
+  <div><span class="eyebrow">Отзывы</span><h2>Нам доверяют</h2></div>
+  <div class="score"><b>4,9</b><span>298 оценок «5» из 302<br>на Профи.ру</span></div>
+ </div>
+ <div class="revs">
+  <div class="rev reveal"><div class="stars">★★★★★</div><p>«Все выполнено четко в поставленные сроки, в будущем буду рад воспользоваться еще Вашими услугами. Горячо рекомендую данного Специалиста!»</p><small>Никита · Перевозка вещей · 26 августа 2026</small></div>
+  <div class="rev reveal"><div class="stars">★★★★★</div><p>«Сделали Все Быстро и Качественно. Спасибо за качественную Работу.»</p><small>Генрих · Перенос мебели · 19 августа 2026</small></div>
+  <div class="rev reveal"><div class="stars">★★★★★</div><p>«Рекомендую к сотрудничеству!»</p><small>Юрий · Сборка мебели · 17 сентября 2026</small></div>
+  <div class="rev reveal"><div class="stars">★★★★★</div><p>«Пять с плюсом»</p><small>Людмила · Такелажные работы · 26 сентября 2026</small></div>
+  <div class="rev reveal"><div class="stars">★★★★★</div><p>«Пять с плюсом»</p><small>Дмитрий · Перевозка холодильника · 27 сентября 2026</small></div>
+  <div class="rev reveal"><div class="stars">★★★★★</div><p>«Пять с плюсом»</p><small>Тимур · Подъём на этаж · 17 сентября 2026</small></div>
+ </div>
+ <div style="margin-top:34px"><a href="https://profi.ru/profile/EvgeniiNS3" target="_blank" rel="noopener" class="btn btn-line">Все 302 отзыва на Профи.ру →</a></div>
+</div></section>
+
+<section><div class="wrap">
+ <span class="eyebrow">Как мы работаем</span>
+ <h2>Четыре шага до спокойствия</h2>
+ <div class="steps">
+  <div class="reveal"><h4>Заявка</h4><p>Напишите, что и куда нужно перевезти. Можно прислать фото.</p></div>
+  <div class="reveal"><h4>Фиксированная цена</h4><p>Считаем смету и заключаем договор.</p></div>
+  <div class="reveal"><h4>Выполнение</h4><p>Приезжаем вовремя, упаковываем, переносим и собираем.</p></div>
+  <div class="reveal"><h4>Приёмка</h4><p>Вы проверяете результат и оплачиваете по факту.</p></div>
+ </div>
+</div></section>
+
+<section id="about" class="about"><div class="wrap about-grid">
+ <div class="reveal" style="border-radius:22px;overflow:hidden;border:1px solid var(--line);aspect-ratio:4/5"><img src="img/evgeny2.jpg" alt="Евгений Никонов" style="width:100%;height:100%;object-fit:cover;object-position:35% center"></div>
+ <div class="reveal">
+  <span class="eyebrow">О нас</span>
+  <h2>Евгений Никонов и команда</h2>
+  <blockquote>Как грузчику стать миллионером, <em>а миллионеру не стать грузчиком.</em></blockquote>
+  <p class="lead">Семь лет в грузоперевозках. Я лично веду каждый заказ, а работу выполняет команда из нашего закрытого клуба «Раз, два, взяли». Наши принципы: честность, сила и перспектива. В Telegram-канале рассказываю о работе, деньгах и жизни без глянца.</p>
+  <div class="socials">
+   <a href="https://t.me/Enikonoff" target="_blank" rel="noopener" class="btn btn-gold">Telegram-канал</a>
+   <a href="https://youtube.com/@lifebeingnow" target="_blank" rel="noopener" class="btn btn-line">YouTube</a>
+   <a href="https://profi.ru/profile/EvgeniiNS3" target="_blank" rel="noopener" class="btn btn-line">Профи.ру</a>
+  </div>
+ </div>
+</div></section>
+
+<section id="order"><div class="wrap order">
+ <div class="reveal">
+  <span class="eyebrow">Заявка</span>
+  <h2>Рассчитаем стоимость за 15 минут</h2>
+  <p class="lead">Опишите задачу, и Евгений свяжется с вами лично. Минимальный заказ 2 000 ₽.</p>
+  <div class="guar"><div>Фиксированная цена в договоре</div><div>Своя упаковка и инструмент</div><div>Ответственность за сохранность</div><div>Работаем по Москве и области</div></div>
+ </div>
+ <form id="f" class="reveal">
+  <div class="row"><label>Имя<input name="website" tabindex="-1" autocomplete="off" style="position:absolute;left:-9999px" aria-hidden="true"><input name="name" required maxlength="80" placeholder="Как к вам обращаться"></label>
+  <label>Телефон<input name="phone" type="tel" required placeholder="+7 ___ ___-__-__"></label></div>
+  <label>Услуга<select name="svc"><option>Переезд</option><option>Такелаж</option><option>Антиквариат / картины</option><option>Пианино / рояль</option><option>Сборка мебели</option><option>Грузчики / мусор</option></select></label>
+  <div class="row"><label>Откуда<input name="from" placeholder="Адрес, этаж, лифт"></label><label>Куда<input name="to" placeholder="Адрес, этаж, лифт"></label></div>
+  <label>Что везём<textarea name="msg" placeholder="Опишите вещи, дату и пожелания"></textarea></label>
+  <button class="btn btn-gold" type="submit" style="justify-content:center">Отправить заявку</button>
+  <p class="ok" id="ok">Спасибо. Заявка принята, Евгений скоро свяжется с вами.</p>
+ </form>
+</div></section>
+
+<footer><div class="wrap"><span>© 2026 Грузчик-миллионер · Москва</span><span><a href="https://t.me/Enikonoff">Telegram</a> · <a href="https://youtube.com/@lifebeingnow">YouTube</a> · <a href="https://profi.ru/profile/EvgeniiNS3">Профи.ру</a></span></div></footer>
+
+<script>window.LEAD_API='';
+const io=new IntersectionObserver(e=>e.forEach(x=>{if(x.isIntersecting){x.target.classList.add('on');io.unobserve(x.target)}}),{threshold:.12});
+document.querySelectorAll('.reveal').forEach(el=>io.observe(el));
+document.querySelectorAll('.vid').forEach(v=>v.addEventListener('click',()=>{const t=v.querySelector('.th');if(t.querySelector('iframe'))return;t.innerHTML='<iframe src="https://www.youtube.com/embed/'+v.dataset.id+'?autoplay=1" allow="autoplay;encrypted-media" allowfullscreen></iframe>'}));
+document.getElementById('f').addEventListener('submit',async e=>{e.preventDefault();const f=e.target,b=f.querySelector('button'),ok=document.getElementById('ok');b.disabled=true;b.textContent='Отправляем…';
+const d=Object.fromEntries(new FormData(f));
+try{const r=await if(!window.LEAD_API)throw 0;await 0;const r0=0;const r=await fetch(window.LEAD_API,{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify(d)});if(!r.ok)throw 0;ok.textContent='Спасибо. Заявка принята, Евгений скоро свяжется с вами.';f.reset()}
+catch(x){ok.innerHTML='Не удалось отправить. Напишите нам напрямую в <a href="https://t.me/Enikonoff" style="color:var(--gold)">Telegram</a>.'}
+ok.style.display='block';b.disabled=false;b.textContent='Отправить заявку'});
+</script>
+</body>
+</html>
