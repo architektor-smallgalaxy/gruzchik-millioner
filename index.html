@@ -128,6 +128,7 @@ footer .wrap{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}
 @media (max-width:520px){.nav .btn{display:none}.steps{grid-template-columns:1fr}form{padding:24px}}
 .mf{max-width:760px}.mf p{font-size:20px;line-height:1.6;margin:0 0 18px;color:var(--tx)}.mf .m{color:var(--mut)}.mf ul{list-style:none;padding:0;margin:0 0 22px}.mf li{padding:8px 0 8px 26px;position:relative;font-size:18px;color:var(--mut)}.mf li:before{content:"";position:absolute;left:0;top:19px;width:12px;height:1px;background:var(--gold)}.mf .big{font-family:var(--f1);font-size:clamp(26px,4vw,38px);line-height:1.25;color:var(--gold);margin-top:34px}
 @media(max-width:600px){.mf p{font-size:18px}.mf li{font-size:16px}}
+.alt{margin-top:14px;font-size:14px;color:var(--mut)}.alt a{color:var(--gold)}
 </style>
 </head>
 <body>
@@ -145,7 +146,7 @@ footer .wrap{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}
    <span class="eyebrow">Москва · переезды · такелаж</span>
    <h1>Быстро, качественно, <em>дорого.</em></h1>
    <p class="lead">Перевозим то, что жалко разбить: антиквариат, картины, пианино, дизайнерскую мебель и технику. Фиксированная цена, договор и спокойствие с первой минуты.</p>
-   <div class="ctas"><a href="#order" class="btn btn-gold">Рассчитать стоимость →</a><a href="https://t.me/MrTokio13" target="_blank" rel="noopener" class="btn btn-line">Написать в Telegram</a><a href="tel:+79653988423" class="btn btn-line">Позвонить</a></div>
+   <div class="ctas"><a href="tel:+79653988423" class="btn btn-gold">Позвонить</a><a href="https://web.max.ru/" target="_blank" rel="noopener" class="btn btn-line maxbtn">Написать в MAX</a><a href="#order" class="btn btn-line">Оставить заявку</a></div><p class="alt">Также: <a href="https://t.me/MrTokio13" target="_blank" rel="noopener">Telegram</a> · <a href="https://www.youtube.com/@lifebeingnow" target="_blank" rel="noopener">YouTube</a></p>
   </div>
   <div class="hero-img reveal"><img src="img/evgeny.jpg" alt="Евгений Никонов, руководитель команды" style="object-position:30% center">
    <div class="badge"><b>4,9</b><span>рейтинг на Профи.ру<br>302 отзыва</span></div></div>
@@ -268,7 +269,9 @@ footer .wrap{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}
   <blockquote>Как грузчику стать миллионером, <em>а миллионеру не стать грузчиком.</em></blockquote>
   <p class="lead">Семь лет в грузоперевозках. Я лично веду каждый заказ, а работу выполняет команда из нашего закрытого клуба «Раз, два, взяли». Наши принципы: честность, сила и перспектива. В Telegram-канале рассказываю о работе, деньгах и жизни без глянца.</p>
   <div class="socials">
-   <a href="https://t.me/Enikonoff" target="_blank" rel="noopener" class="btn btn-gold">Telegram-канал</a>
+   <a href="tel:+79653988423" class="btn btn-gold">Позвонить</a>
+   <a href="https://web.max.ru/" target="_blank" rel="noopener" class="btn btn-line maxbtn">Написать в MAX</a>
+   <a href="https://t.me/Enikonoff" target="_blank" rel="noopener" class="btn btn-line">Telegram-канал</a>
    <a href="https://www.youtube.com/@lifebeingnow" target="_blank" rel="noopener" class="btn btn-line">YouTube</a>
    <a href="https://profi.ru/profile/EvgeniiNS3" target="_blank" rel="noopener" class="btn btn-line">Профи.ру</a>
   </div>
@@ -288,7 +291,7 @@ footer .wrap{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}
   <label>Услуга<select name="svc"><option>Переезд</option><option>Такелаж</option><option>Антиквариат / картины</option><option>Пианино / рояль</option><option>Сборка мебели</option><option>Грузчики / мусор</option></select></label>
   <div class="row"><label>Откуда<input name="from" placeholder="Адрес, этаж, лифт"></label><label>Куда<input name="to" placeholder="Адрес, этаж, лифт"></label></div>
   <label>Что везём<textarea name="msg" placeholder="Опишите вещи, дату и пожелания"></textarea></label>
-  <button class="btn btn-gold" type="submit" style="justify-content:center">Отправить заявку</button><p style="font-size:14px;opacity:.75;margin-top:8px">Неудобно звонить? Оставьте заявку в <a href="https://t.me/gruzimpogruzim_bot" style="color:var(--gold)">Telegram-боте</a> или позвоните: <a href="tel:+79653988423" style="color:var(--gold)">+7 965 398-84-23</a></p>
+  <button class="btn btn-gold" type="submit" style="justify-content:center">Отправить заявку</button><p style="font-size:14px;opacity:.75;margin-top:8px">Или сразу позвоните / напишите в MAX: <a href="tel:+79653988423" style="color:var(--gold)">+7 965 398-84-23</a></p>
   <p class="ok" id="ok">Спасибо. Заявка принята, Евгений скоро свяжется с вами.</p>
  </form>
 </div></section>
@@ -303,8 +306,9 @@ const d=Object.fromEntries(new FormData(f));
 if(d.website){b.disabled=false;return}
 const msg=`Заявка с сайта\nИмя: ${d.name||''}\nТелефон: ${d.phone||''}\nУслуга: ${d.svc||''}\nОткуда: ${d.from||''}\nКуда: ${d.to||''}\n${d.msg||''}`;
 try{navigator.clipboard&&navigator.clipboard.writeText(msg)}catch(_){}
-window.open('https://t.me/gruzimpogruzim_bot','_blank');
-ok.innerHTML='Спасибо. Текст заявки скопирован — вставьте его в открывшемся Telegram-боте. Или позвоните: <a href="tel:+79653988423" style="color:var(--gold)">+7 965 398-84-23</a>.';ok.style.display='block';f.reset();b.disabled=false;b.textContent='Отправить заявку'});
+location.href='sms:+79653988423'+(/iPhone|iPad|Mac/.test(navigator.userAgent)?'&':'?')+'body='+encodeURIComponent(msg);
+ok.innerHTML='Спасибо. Откроется SMS с готовым текстом заявки — просто нажмите «Отправить». Текст также скопирован: можно вставить его в <a href="https://web.max.ru/" target="_blank" style="color:var(--gold)">MAX</a> или <a href="https://t.me/gruzimpogruzim_bot" target="_blank" style="color:var(--gold)">Telegram-бот</a> на номер +7 965 398-84-23. Или позвоните: <a href="tel:+79653988423" style="color:var(--gold)">+7 965 398-84-23</a>.';ok.style.display='block';f.reset();b.disabled=false;b.textContent='Отправить заявку'});
+document.querySelectorAll('.maxbtn').forEach(x=>x.addEventListener('click',()=>{try{navigator.clipboard.writeText('+79653988423')}catch(_){}}));
 </script>
 </body>
 </html>
