@@ -1,6 +1,7 @@
 <!doctype html>
 <html lang="ru">
 <head>
+<script>if(location.protocol==="http:"&&location.hostname!=="localhost")location.replace("https://"+location.host+location.pathname+location.search+location.hash)</script>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>Грузчик-миллионер — бережные переезды и такелаж в Москве</title>
@@ -61,7 +62,7 @@ header{position:fixed;inset:0 0 auto;z-index:20;background:rgba(15,14,12,.82);ba
 .why-grid{display:grid;grid-template-columns:.9fr 1.1fr;gap:70px;align-items:center}
 .why-img{border-radius:22px;overflow:hidden;border:1px solid var(--line)}
 .list{margin-top:30px;display:grid;gap:22px}
-.list div{display:grid;grid-template-columns:44px 1fr;gap:16px}
+.list>div{display:grid;grid-template-columns:44px 1fr;gap:16px;align-items:start}.list>div>div{display:block}
 .list i{width:44px;height:44px;border-radius:50%;border:1px solid var(--gold);display:grid;place-items:center;color:var(--gold);font-style:normal;font-family:var(--f1)}
 .list h4{font-size:18px;margin-bottom:4px}.list p{color:var(--mut);font-size:15px}
 /* gallery */
@@ -74,7 +75,7 @@ header{position:fixed;inset:0 0 auto;z-index:20;background:rgba(15,14,12,.82);ba
 @media(max-width:900px){.gal2{grid-template-columns:1fr 1fr}}
 /* video */
 .vids{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;margin-top:50px}
-.vid{cursor:pointer}
+.vid{cursor:pointer;display:block;color:inherit;text-decoration:none}
 .vid .th{position:relative;aspect-ratio:16/9;border-radius:16px;overflow:hidden;border:1px solid var(--line)}
 .vid .th img{width:100%;height:100%;object-fit:cover}
 .vid .th:after{content:"";position:absolute;inset:0;background:linear-gradient(transparent 50%,rgba(0,0,0,.6))}
@@ -126,6 +127,8 @@ footer .wrap{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}
  .row{grid-template-columns:1fr}
 }
 @media (max-width:520px){.nav .btn{display:none}.steps{grid-template-columns:1fr}form{padding:24px}}
+.mf{max-width:760px}.mf p{font-size:20px;line-height:1.6;margin:0 0 18px;color:var(--tx)}.mf .m{color:var(--mut)}.mf ul{list-style:none;padding:0;margin:0 0 22px}.mf li{padding:8px 0 8px 26px;position:relative;font-size:18px;color:var(--mut)}.mf li:before{content:"";position:absolute;left:0;top:19px;width:12px;height:1px;background:var(--gold)}.mf .big{font-family:var(--f1);font-size:clamp(26px,4vw,38px);line-height:1.25;color:var(--gold);margin-top:34px}
+@media(max-width:600px){.mf p{font-size:18px}.mf li{font-size:16px}}
 </style>
 </head>
 <body>
@@ -170,6 +173,20 @@ footer .wrap{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}
  </div>
 </div></section>
 
+<section id="manifest"><div class="wrap mf reveal">
+ <span class="eyebrow">Философия</span>
+ <h2>Мы — специалисты-универсалы</h2>
+ <p class="m">Мы — не «грузчики» в том смысле, в котором этот термин используют на биржах труда.</p>
+ <p>Мы — специалисты-универсалы. Не потому что мы так назвались. А потому что за нами:</p>
+ <ul><li>годы работы в нестандартных ситуациях,</li><li>адаптация к любой логистике,</li><li>умение принять решение за 10 секунд,</li><li>опыт тысяч людей, который передаётся внутри системы.</li></ul>
+ <p>Навык — не в мышцах. Навык — в голове, в наблюдательности, в приборах, в алгоритмах.</p>
+ <p>Мы не можем быть дешёвыми. Не потому что мы жадные. А потому что дешёвый сервис не может быть одновременно универсальным, быстрым, аккуратным и предсказуемым.</p>
+ <p>Мы не продаём килограммы или часы. Мы продаём:</p>
+ <ul><li>отсутствие головной боли,</li><li>гарантию, что всё встанет так, как нужно,</li><li>решение, когда другие говорят «это невозможно».</li></ul>
+ <p class="m">Дёшево — это «приедут ребята, что-то сделают, и как повезёт».<br>Дорого — это система, в которой ты можешь быть уверен.</p>
+ <p class="big">И мы — это система. Поэтому «дорого» — это не цена, которую мы назначаем. Это стоимость твоего спокойствия.</p>
+</div></section>
+
 <section class="why"><div class="wrap why-grid">
  <div class="why-img reveal"><img src="img/roof.jpg" alt="Такелаж кондиционера на крыше"></div>
  <div class="reveal">
@@ -207,14 +224,14 @@ footer .wrap{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}
  <h2>Смотрите, как мы работаем</h2>
  <p class="lead">Снимаем реальные заказы без постановки: сложные проёмы, ценные вещи и немного закулисья.</p>
  <div class="vids">
-  <div class="vid reveal" data-id="INdgPtNHpv4"><div class="th"><img src="img/yt-INdgPtNHpv4.jpg" alt=""><span class="play">▶</span></div><h3>Грузчик-миллионер в доме Станиславского</h3></div>
-  <div class="vid reveal" data-id="UucI0WYpWgU"><div class="th"><img src="img/yt-UucI0WYpWgU.jpg" alt=""><span class="play">▶</span></div><h3>Пароль ПЕРЕЕЗД и такелаж с препятствиями</h3></div>
-  <div class="vid reveal" data-id="EP2DRL4EWYM"><div class="th"><img src="img/yt-EP2DRL4EWYM.jpg" alt=""><span class="play">▶</span></div><h3>И снова картины…</h3></div>
-   <div class="vid reveal" data-id="4_OB1ovjCr0"><div class="th"><img src="img/yt-4_OB1ovjCr0.jpg" alt="" loading="lazy"><span class="play">▶</span></div><h3>Краш-тест старой мебели</h3></div>
-  <div class="vid reveal" data-id="UqjdeBxrnNw"><div class="th"><img src="img/yt-UqjdeBxrnNw.jpg" alt="" loading="lazy"><span class="play">▶</span></div><h3>Офисы, снова картины и баскетбольная команда</h3></div>
-  <div class="vid reveal" data-id="DoGFv9NGEjE"><div class="th"><img src="img/yt-DoGFv9NGEjE.jpg" alt="" loading="lazy"><span class="play">▶</span></div><h3>Весенний рабочий процесс</h3></div>
+  <a class="vid reveal" href="https://www.youtube.com/watch?v=INdgPtNHpv4" target="_blank" rel="noopener"><div class="th"><img src="img/yt-INdgPtNHpv4.jpg" alt=""><span class="play">▶</span></div><h3>Грузчик-миллионер в доме Станиславского</h3></a>
+  <a class="vid reveal" href="https://www.youtube.com/watch?v=UucI0WYpWgU" target="_blank" rel="noopener"><div class="th"><img src="img/yt-UucI0WYpWgU.jpg" alt=""><span class="play">▶</span></div><h3>Пароль ПЕРЕЕЗД и такелаж с препятствиями</h3></a>
+  <a class="vid reveal" href="https://www.youtube.com/watch?v=EP2DRL4EWYM" target="_blank" rel="noopener"><div class="th"><img src="img/yt-EP2DRL4EWYM.jpg" alt=""><span class="play">▶</span></div><h3>И снова картины…</h3></a>
+   <a class="vid reveal" href="https://www.youtube.com/watch?v=4_OB1ovjCr0" target="_blank" rel="noopener"><div class="th"><img src="img/yt-4_OB1ovjCr0.jpg" alt="" loading="lazy"><span class="play">▶</span></div><h3>Краш-тест старой мебели</h3></a>
+  <a class="vid reveal" href="https://www.youtube.com/watch?v=UqjdeBxrnNw" target="_blank" rel="noopener"><div class="th"><img src="img/yt-UqjdeBxrnNw.jpg" alt="" loading="lazy"><span class="play">▶</span></div><h3>Офисы, снова картины и баскетбольная команда</h3></a>
+  <a class="vid reveal" href="https://www.youtube.com/watch?v=DoGFv9NGEjE" target="_blank" rel="noopener"><div class="th"><img src="img/yt-DoGFv9NGEjE.jpg" alt="" loading="lazy"><span class="play">▶</span></div><h3>Весенний рабочий процесс</h3></a>
  </div>
- <div style="margin-top:34px"><a href="https://youtube.com/@lifebeingnow" target="_blank" rel="noopener" class="btn btn-line">Все видео на YouTube →</a></div>
+ <div style="margin-top:34px"><a href="https://www.youtube.com/@lifebeingnow" target="_blank" rel="noopener" class="btn btn-line">Все видео на YouTube →</a></div>
 </div></section>
 
 <section id="reviews" class="why"><div class="wrap">
@@ -253,7 +270,7 @@ footer .wrap{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}
   <p class="lead">Семь лет в грузоперевозках. Я лично веду каждый заказ, а работу выполняет команда из нашего закрытого клуба «Раз, два, взяли». Наши принципы: честность, сила и перспектива. В Telegram-канале рассказываю о работе, деньгах и жизни без глянца.</p>
   <div class="socials">
    <a href="https://t.me/Enikonoff" target="_blank" rel="noopener" class="btn btn-gold">Telegram-канал</a>
-   <a href="https://youtube.com/@lifebeingnow" target="_blank" rel="noopener" class="btn btn-line">YouTube</a>
+   <a href="https://www.youtube.com/@lifebeingnow" target="_blank" rel="noopener" class="btn btn-line">YouTube</a>
    <a href="https://profi.ru/profile/EvgeniiNS3" target="_blank" rel="noopener" class="btn btn-line">Профи.ру</a>
   </div>
  </div>
@@ -277,12 +294,11 @@ footer .wrap{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}
  </form>
 </div></section>
 
-<footer><div class="wrap"><span>© 2026 Грузчик-миллионер · Москва</span><span><a href="tel:+79653988423">+7 965 398-84-23</a> · <a href="https://t.me/MrTokio13">Telegram</a> · <a href="https://t.me/Enikonoff">Канал</a> · <a href="https://t.me/gruzimpogruzim_bot">Бот заявок</a> · MAX: +7 965 398-84-23 · <a href="https://youtube.com/@lifebeingnow">YouTube</a> · <a href="https://profi.ru/profile/EvgeniiNS3">Профи.ру</a></span></div></footer>
+<footer><div class="wrap"><span>© 2026 Грузчик-миллионер · Москва</span><span><a href="tel:+79653988423">+7 965 398-84-23</a> · <a href="https://t.me/MrTokio13">Telegram</a> · <a href="https://t.me/Enikonoff">Канал</a> · <a href="https://t.me/gruzimpogruzim_bot">Бот заявок</a> · MAX: +7 965 398-84-23 · <a href="https://www.youtube.com/@lifebeingnow">YouTube</a> · <a href="https://profi.ru/profile/EvgeniiNS3">Профи.ру</a></span></div></footer>
 
 <script>window.LEAD_API='';
 const io=new IntersectionObserver(e=>e.forEach(x=>{if(x.isIntersecting){x.target.classList.add('on');io.unobserve(x.target)}}),{threshold:.12});
 document.querySelectorAll('.reveal').forEach(el=>io.observe(el));
-document.querySelectorAll('.vid').forEach(v=>v.addEventListener('click',()=>{const t=v.querySelector('.th');if(t.querySelector('iframe'))return;t.innerHTML='<iframe src="https://www.youtube.com/embed/'+v.dataset.id+'?autoplay=1" allow="autoplay;encrypted-media" allowfullscreen></iframe>'}));
 document.getElementById('f').addEventListener('submit',async e=>{e.preventDefault();const f=e.target,b=f.querySelector('button'),ok=document.getElementById('ok');b.disabled=true;b.textContent='Отправляем…';
 const d=Object.fromEntries(new FormData(f));
 if(d.website){b.disabled=false;return}
