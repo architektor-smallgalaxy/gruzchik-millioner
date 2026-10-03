@@ -87,7 +87,7 @@ header{position:fixed;inset:0 0 auto;z-index:20;background:rgba(15,14,12,.82);ba
 .score{display:flex;align-items:center;gap:20px}
 .score b{font-family:var(--f1);font-size:84px;font-weight:400;color:var(--gold);line-height:1}
 .score span{color:var(--mut);font-size:15px}
-.revs{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;margin-top:50px}
+.revs{display:grid;grid-template-columns:repeat(4,1fr);gap:22px;margin-top:50px}
 .rev{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:28px}
 .stars{color:var(--gold);letter-spacing:3px;margin-bottom:12px}
 .rev p{font-size:15px;color:#d8d1c3}.rev small{display:block;margin-top:16px;color:var(--mut)}
@@ -129,6 +129,7 @@ footer .wrap{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}
 .mf{max-width:760px}.mf p{font-size:20px;line-height:1.6;margin:0 0 18px;color:var(--tx)}.mf .m{color:var(--mut)}.mf ul{list-style:none;padding:0;margin:0 0 22px}.mf li{padding:8px 0 8px 26px;position:relative;font-size:18px;color:var(--mut)}.mf li:before{content:"";position:absolute;left:0;top:19px;width:12px;height:1px;background:var(--gold)}.mf .big{font-family:var(--f1);font-size:clamp(26px,4vw,38px);line-height:1.25;color:var(--gold);margin-top:34px}
 @media(max-width:600px){.mf p{font-size:18px}.mf li{font-size:16px}}
 .alt{margin-top:14px;font-size:14px;color:var(--mut)}.alt a{color:var(--gold)}
+@media(max-width:1100px) and (min-width:901px){.revs{grid-template-columns:repeat(2,1fr)}}
 </style>
 </head>
 <body>
