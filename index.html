@@ -65,6 +65,7 @@ header{position:fixed;inset:0 0 auto;z-index:20;background:rgba(15,14,12,.82);ba
 .svc .n{font-size:13px;color:var(--gold);letter-spacing:.1em}
 .svc h3{font-size:24px;margin:14px 0 10px}
 .svc p{color:var(--mut);font-size:15px}
+.snotes{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin-top:22px}.snotes>div{border:1px solid var(--line);border-radius:16px;padding:18px 20px;background:var(--card)}.snotes b{display:block;font-size:15px;margin-bottom:6px;color:var(--gold)}.snotes span{color:var(--mut);font-size:14px;line-height:1.5}.snotes a{color:var(--tx);white-space:nowrap}@media(max-width:900px){.snotes{grid-template-columns:1fr 1fr}}@media(max-width:520px){.snotes{grid-template-columns:1fr}}
 .svc .price{margin-top:18px;font-weight:700;color:var(--tx)}
 /* why */
 .why{background:var(--bg2)}
@@ -181,11 +182,16 @@ footer .wrap{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}
   <article class="reveal"><span class="n">01</span><h3>Квартирные и офисные переезды</h3><p>Упаковка, разборка, перевозка и сборка на новом месте. Вы приезжаете, а всё уже стоит.</p><div class="price">от 1 200 ₽/час за грузчика, минимум 5 часов</div></article>
   <article class="reveal"><span class="n">02</span><h3>Такелажные работы</h3><p>Сейфы, станки, кондиционеры и тяжёлое оборудование. Подъём на этаж и на кровлю.</p><div class="price">от 3 000 ₽, фиксированная цена</div></article>
   <article class="reveal"><span class="n">03</span><h3>Антиквариат и картины</h3><p>Музейная упаковка, отдельная погрузка, бережная перевозка ценных и хрупких вещей.</p><div class="price">Индивидуально</div></article>
-  <article class="reveal"><span class="n">04</span><h3>Пианино и рояли</h3><p>Перевозка на машине с гидробортом, подъём и спуск по лестницам. Если инструмент отслужил, вывезем на утилизацию.</p><div class="price">от 15 000 ₽ с машиной с гидробортом</div></article>
-  <article class="reveal"><span class="n">05</span><h3>Сборка мебели</h3><p>Разборка и сборка любой сложности, включая офисную и дизайнерскую мебель.</p><div class="price">По запросу</div></article>
-  <article class="reveal"><span class="n">06</span><h3>Грузчики и вынос мусора</h3><p>Погрузка, разгрузка, подъём на этаж, спуск строительного мусора.</p><div class="price">от 1 200 ₽/час, минимум 4 часа</div></article>
+  <article class="reveal"><span class="n">04</span><h3>Пианино и рояли</h3><p>Перевозка на машине с гидробортом, подъём и спуск по лестницам. Если инструмент отслужил, вывезем на утилизацию.</p><div class="price">от 20 000 ₽ с машиной с гидробортом</div></article>
+  <article class="reveal"><span class="n">05</span><h3>Грузчики почасово</h3><p>Погрузка, разгрузка, подъём на этаж, разборка и сборка мебели, помощь на мероприятиях.</p><div class="price">от 1 200 ₽/час, минимум 4 часа</div></article>
+  <article class="reveal"><span class="n">06</span><h3>Быстрые задачи</h3><p>Переставить холодильник, занести диван, передвинуть шкаф. Приедем, сделаем и уедем, без минималки в 4 часа.</p><div class="price">от 3 000 ₽ за выезд</div></article>
  </div>
- <p class="alt" style="margin-top:22px">Небольшая задача (переставить холодильник, передвинуть мебель) — от 3 000 ₽ за выезд. Транспорт подбираем под задачу и считаем отдельно. Для дорогих интерьеров — премиум-бригада в форме, по запросу. Срочные ночные заказы (21:00–7:00) — ×1,5 к цене, Дмитрий Иванович <a href="tel:+79083174192" style="color:var(--gold);white-space:nowrap">+7 908 317-41-92</a>. Работаем по Москве и ближнему Подмосковью.</p>
+ <div class="snotes reveal">
+  <div><b>Транспорт</b><span>Газель, грузовик или гидроборт под задачу, считаем отдельно</span></div>
+  <div><b>Премиум-бригада</b><span>Ребята в форме для дорогих интерьеров, по запросу</span></div>
+  <div><b>Ночью, 21:00–7:00</b><span>Тариф ×1,5. Дмитрий Иванович: <a href="tel:+79083174192">+7 908 317-41-92</a></span></div>
+  <div><b>География</b><span>Москва и ближнее Подмосковье</span></div>
+ </div>
 </div></section>
 
 
@@ -296,7 +302,7 @@ footer .wrap{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}
  <form id="f" class="reveal">
   <div class="row"><label>Имя<input name="website" tabindex="-1" autocomplete="off" style="position:absolute;left:-9999px" aria-hidden="true"><input name="name" required maxlength="80" placeholder="Как к вам обращаться"></label>
   <label>Телефон<input name="phone" type="tel" required placeholder="+7 ___ ___-__-__"></label></div>
-  <label>Услуга<select name="svc"><option>Переезд</option><option>Такелаж</option><option>Антиквариат / картины</option><option>Пианино / рояль</option><option>Сборка мебели</option><option>Грузчики / мусор</option></select></label>
+  <label>Услуга<select name="svc"><option>Переезд</option><option>Такелаж</option><option>Антиквариат / картины</option><option>Пианино / рояль</option><option>Грузчики почасово</option><option>Быстрая задача</option></select></label>
   <div class="row"><label>Откуда<input name="from" placeholder="Адрес, этаж, лифт"></label><label>Куда<input name="to" placeholder="Адрес, этаж, лифт"></label></div>
   <label>Что везём<textarea name="msg" placeholder="Опишите вещи, дату и пожелания"></textarea></label>
   <button class="btn btn-gold" type="submit" style="justify-content:center">Отправить заявку</button><p style="font-size:14px;opacity:.75;margin-top:8px">Или сразу позвоните / напишите в MAX: <a href="tel:+79653988423" style="color:var(--gold)">+7 965 398-84-23</a></p>
